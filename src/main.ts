@@ -10,6 +10,13 @@ async function bootstrap() {
       forbidNonWhitelisted: true,
     }),
   );
+
+  app.enableCors({
+    origin: '*',
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Allowed HTTP Methods
+    allowedHeaders: '*', // Allowed HTTP Headers
+  });
+
   await app.listen(process.env.PORT);
 }
 bootstrap();

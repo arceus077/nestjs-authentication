@@ -23,7 +23,7 @@ export class AppService {
         password: hashPassword,
       });
       await newUser.save();
-      return { success: true };
+      return { success: true, email };
     }
 
     return { success: false, message: 'User already exists' };
