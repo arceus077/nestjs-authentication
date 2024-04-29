@@ -68,7 +68,7 @@ $ npm run test:cov
 There are primary 3 endpoints in this service
 
 1. POST /register - For Register User and required data like fullName, lastName, email and password
-2. POST /auth/logn - For User Login where required data are email and password
+2. POST /auth/login - For User Login where required data are email and password
 3. POST /auth/refresh - For Generating a new auth-token from refresh-token under request body when auth-token expires, Here we require authToken and refreshToken in request body.
 
 
