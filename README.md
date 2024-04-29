@@ -23,8 +23,16 @@
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
 ## Description
+This project uses Nest JS framework to perform CRUD operations, It utilises mongoDB for database. It contains a user model with name, e-mail and password fields and has built in routes for CRUD operations of that model. It also has auth model to store tokens. This project uses class-validator for model validation and interceptor for response formatting.
+
+It uses jwt to verify users and generate tokens for authenticated users. It uses auth-token and refresh-token strategy for authentication, refresh token is used to generate a new token for authentication when the old one expires, all tokens are stored in DB for added security.
 
 ## Installation
+
+1. Install npm
+2. Start MongoDB Instance
+3. Copy .env.example file to .env and set your environment configurations such as MONGO_URL, PRIVATE_KEY
+4. Install dependencies
 
 ```bash
 $ npm install
@@ -56,11 +64,7 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## References Used
+## Support / Sources Consulted
 
 - Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
 - Website - [https://nestjs.com](https://nestjs.com/)
